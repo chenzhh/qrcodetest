@@ -1,0 +1,21 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        download(); 
+        function download(){ 
+            var u = navigator.userAgent;
+            var ua = u.toLowerCase();   
+            if (/iphone|ipad|ipod/.test(ua)) {
+                window.location.href = 'https://apps.apple.com/au/app/id1489801468';
+            } else if ( /android/.test(ua)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=au.com.memberbuy.guestapp';
+            }
+        }
+    </script>
+</body>
+</html>
